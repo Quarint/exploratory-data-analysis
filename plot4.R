@@ -15,7 +15,7 @@ pm25coalComb <- subset(NEI, NEI$SCC %in% coalCombSources)
 pm25_year <- tapply(pm25coalComb$Emissions, pm25coalComb$year, sum)
 
 # Opening graphics device
-png("plot4.png", width = 480, height = 480)
+png("plot4.png", width = 600, height = 480)
 
 barplot(pm25_year, ylab = "PM2.5 emitted (tons)", main = "PM2.5 emissions from coal combustion-related sources in the US")
 

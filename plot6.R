@@ -1,4 +1,5 @@
 library(dplyr)
+library(ggplot2)
 
 # Loading data
 NEI <- readRDS("summarySCC_PM25.rds")
